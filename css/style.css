@@ -1,0 +1,683 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+/* Hero Section */
+.heroSection .navbar {
+  margin-bottom: 5em;
+}
+.heroSection .navbar .nav-link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  margin-right: 2.5em;
+}
+.heroSection .navbar-brand img {
+  height: 140px;
+  margin-bottom: -3.3em;
+}
+.heroSection .navbar .navbar-nav {
+  margin-left: -1.3em;
+}
+.commonSection {
+  position: relative;
+}
+.commonBgImage {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 112%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.mainText {
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1.1em;
+}
+.squareBtn {
+  display: inline-block;
+  text-decoration: none;
+  background-image: url(../img/button-bg2.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9em;
+  width: 130px;
+  letter-spacing: 1px;
+  padding: 0.7em 0 1.4em 0;
+  transition: 200ms ease-in-out;
+  text-align: center;
+}
+.squareBtn:hover {
+  text-decoration: none;
+  color: white;
+  transform: translate3d(0, -3px, 0);
+}
+.heroSection .col-lg-5.odd {
+  margin-top: -2em;
+}
+.fishBtn {
+  display: inline-block;
+  text-decoration: none;
+  background-image: url("../img/button-bg.png");
+  background-size: 100%;
+  background-position: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9em;
+  height: 70px;
+  letter-spacing: 2px;
+  padding: 0.6em 1.5em;
+  width: 175px;
+  transition: 200ms ease-in-out;
+  text-align: center;
+  background-repeat: no-repeat;
+  line-height: 2.7;
+}
+.fishBtn:hover {
+  text-decoration: none;
+  color: white;
+  transform: translate3d(0, -3px, 0);
+}
+.fishBtn.odd {
+  line-height: unset;
+}
+.heroSection .fishBtns {
+  display: flex;
+  align-items: center;
+}
+.heroSection .bgText {
+  background-color: #f5a436;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8em;
+  border-radius: 0 40px 40px 0;
+  padding: 0.8em 0.5em 0.8em 1em;
+  letter-spacing: 1px;
+}
+.heroSection .heroLinks {
+  position: absolute;
+  left: 0;
+  top: 64%;
+  width: 100%;
+}
+.heroSection .redBgText.bgText {
+  background-color: #e24644;
+  margin-top: -0.6em;
+}
+.heroSection .fishBtn.leftBtn {
+  margin-left: 10em;
+}
+.heroSection .redBgText.bgText br {
+  display: none;
+}
+
+/* About Section */
+.aboutSection {
+  padding: 8em 0 7em 0;
+  min-height: 620px;
+  margin-top: 3em;
+}
+.bgHeading {
+  color: white;
+  background-image: url("../img/image-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: 800;
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 120px;
+  width: 230px;
+  line-height: 10.5;
+  text-align: center;
+  z-index: 10;
+}
+.aboutSection .oceanImg {
+  position: absolute;
+  height: 210px;
+  right: 270px;
+  top: -158px;
+  z-index: 0;
+  display: none;
+}
+
+/* Why Section */
+.whySection {
+  padding: 12em 0 3em 0;
+  margin-top: -7em;
+}
+.whySection .blueBg {
+  background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.04));
+  padding: 1em 1.5em;
+  border-radius: 2em;
+  margin-top: 12em;
+}
+.whySection .blueBg .mainText {
+  margin-bottom: 2em;
+}
+.whySection .bgHeading {
+  top: 245px;
+}
+
+/* How Section */
+.howSection {
+  padding: 3em 0;
+  min-height: 600px;
+  text-align: center;
+  margin-top: 2em;
+}
+.howSection .mainText {
+  color: #f6593c;
+  margin-top: 8em;
+}
+.howSection .howLink {
+  background-image: url("../img/red-bg.png");
+  height: 50px;
+  width: 180px;
+  padding: 0;
+  line-height: 3.2;
+}
+.howSection .howImg {
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Details Section */
+.detailsSection {
+  padding: 2em 0;
+  margin-top: 2em;
+  text-align: center;
+}
+.detailsSection .detailsBgImg {
+  z-index: -1;
+}
+.detailsSection .detailsHeading {
+  color: #ffd200;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: 0.4em;
+}
+.detailsSection .detailsText {
+  color: white;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+.detailsSection .detailsSteps {
+  background-image: url("../img/details-img.png");
+  background-position: center;
+  background-size: 100%;
+  padding: 2em 3em;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 2em;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.detailsSection .detailsSteps.odd {
+  background-image: url("../img/details-img2.png");
+}
+.detailsSection .detailsSteps.odd .stepNumber {
+  right: 110px !important;
+  left: unset;
+}
+.detailsSection .detailsSteps .stepNumber {
+  position: absolute;
+  background-color: #5c0606;
+  font-size: 3.2em;
+  font-weight: bold;
+  color: white;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 110px;
+  top: 20px;
+}
+.detailsSection .commonBgImage {
+  height: 103%;
+}
+.detailsSection .detailsLinks {
+  background-image: url("../img/rectangle-shape.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  bottom: -60px;
+  z-index: 1;
+  padding: 1em 0;
+}
+.detailsSection .detailsLinks .mainText {
+  font-weight: 600;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+.detailsSection .detailsLinks .mainText.odd {
+  color: #b7f63c;
+}
+.detailsSection .detailsLinks br {
+  display: none;
+}
+
+/* Token Section */
+.tokenSection {
+  min-height: 118vh;
+  margin-top: 2em;
+}
+.tokenSection .bgHeading {
+  top: 30px;
+}
+.tokenSection .row.oddRow {
+  margin-top: 10em;
+}
+.tokenSection .tokenImg {
+  position: absolute;
+  left: 0;
+  width: 360px;
+}
+.taxesContainer {
+  position: relative;
+  background-image: url(../img/token-img.png);
+  height: 220px;
+  background-size: 360px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.taxesContainer h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+.taxesContainer h5 {
+  font-size: 1.3em;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+}
+.tokenSection .tokenCat {
+  position: relative;
+  width: 35%;
+  margin-top: 2.5em;
+}
+
+/* Roadmap Section */
+.roadmapSection {
+  min-height: 1177px;
+  margin-top: -6em;
+  z-index: 50;
+}
+.roadmapSection .bgHeading {
+  top: 120px;
+}
+.roadmapSection .catImage {
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 210px;
+  z-index: 200;
+}
+.roadmapSection .mainText {
+  margin-top: 18em;
+  text-align: center;
+}
+.roadmapSection .roadmapDetails {
+  background-image: url("../img/roadmap-phase-bg.png");
+  background-position: center;
+  background-size: 100%;
+  padding: 3em 1em;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.roadmapSection .roadmapDetails.phase-3 {
+  background-size: 100% 193px;
+}
+.roadmapSection .roadmapDetails.phase-4 {
+  background-size: 100% 193px;
+}
+.roadmapSection .roadmapDetails .roadmapText {
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.roadmapSection .roadmapDetails .mainText {
+  margin-top: 0;
+  text-align: left;
+  font-size: 1.3em;
+  margin-bottom: 0.4em;
+}
+.roadmapSection .roadmapImage {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -120px;
+  max-width: 840px;
+  width: 100%;
+  z-index: 20;
+}
+
+/* Page Footer */
+.pageFooter {
+  min-height: 100vh;
+  margin-top: -3em;
+}
+.pageFooter .commonBgImage {
+  height: 130%;
+}
+.pageFooter .footerLinks {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
+  text-align: center;
+}
+.pageFooter .footerBrand {
+  display: inline-block;
+}
+.pageFooter .footerBrand img {
+  height: 150px;
+  margin-bottom: 0.2em;
+}
+.pageFooter .mainText.lightText {
+  font-weight: 500;
+}
+.pageFooter .socialLinks .socailLink {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  color: #f18f38;
+  font-size: 1.7em;
+  height: 40px;
+  width: 40px;
+  line-height: 1.6;
+  border-radius: 50%;
+  transition: 200ms ease-in-out;
+}
+.pageFooter .socialLinks .socailLink:hover {
+  text-decoration: none;
+  transform: translate3d(0, -3px, 0);
+  opacity: 0.8;
+}
+
+/* Side Menu Btn */
+.sideMenuBtn {
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  right: 25px;
+  display: none;
+  background-color: white;
+  box-shadow: 0 2px 4px black;
+  z-index: 100;
+  padding: 1.3em 0.7em;
+  cursor: pointer;
+}
+.sideMenuBtn > div:last-child {
+  margin-bottom: 0;
+}
+.sideMenuBtn div {
+  width: 100%;
+  background-color: brown;
+  height: 3px;
+  margin-bottom: 9px;
+  transition: 500ms all ease-in-out;
+}
+.sideMenuBtn.active {
+  padding-top: 2em;
+}
+.sideMenuBtn.active div {
+  height: 4px;
+  margin-bottom: -4px;
+}
+.sideMenuBtn.active > div:first-child {
+  transform: rotate(-45deg);
+}
+.sideMenuBtn.active > div:nth-child(2) {
+  transform: rotate(45deg);
+}
+.sideMenuBtn.active > div:last-child {
+  display: none;
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 90;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 2em;
+  transition: 400ms all ease-in-out;
+}
+.mobileMenu.active {
+  width: 100%;
+}
+.mobileMenu .mobileMenuLink.active {
+  color: brown;
+}
+.mobileMenu .mobileMenuLink {
+  display: block;
+  text-decoration: none;
+  margin: 1em auto;
+  color: black;
+  font-size: 1.5em;
+}
+/* Media Queries */
+@media (max-width: 992px) {
+  .heroSection .navbar {
+    display: flex;
+  }
+  .heroSection {
+    padding-top: 7em;
+  }
+  .sideMenuBtn {
+    display: block;
+  }
+  .heroSection .col-lg-5.odd {
+    margin-top: 2em;
+  }
+  .roadmapSection {
+    min-height: 1726px;
+  }
+  .heroSection .heroLinks {
+    top: 27%;
+  }
+  .mainText {
+    text-align: center;
+  }
+  .whySection {
+    padding: 16em 0 3em 0;
+    z-index: -1;
+  }
+  .detailsSection .detailsLinks {
+    bottom: 0;
+  }
+  .commonBgImage {
+    display: none;
+  }
+  .commonSection {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+  }
+  #hero_section {
+    background-image: url(../img/hero-bg.png);
+  }
+  #about_section {
+    background-image: url(../img/about-bg.png);
+  }
+  #why_section {
+    background-image: url(../img/why-bg.png);
+    margin-top: -300px;
+    position: relative;
+    z-index: 1;
+  }
+  .whySection .bgHeading {
+    top: 313px;
+  }
+  .tokenSection {
+    height: 1180px;
+  }
+  #how_section {
+    background-image: url(../img/how-bg.png);
+    min-height: 820px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+  }
+  #details_section {
+    background-image: url(../img/details-bg.png);
+    padding-bottom: 4em;
+  }
+  .roadmapSection .detailsLinks {
+    bottom: -2%;
+  }
+  #token_section {
+    background-image: url(../img/token-bg.jpg);
+  }
+  #roadmap_section {
+    background-image: url(../img/roadmap-bg.png);
+    background-image: url(../img/roadmap-bg.png);
+    margin-top: -244px;
+    padding: 9em 0;
+    margin-bottom: -113px;
+  }
+  .roadmapSection .bgHeading {
+    top: 245px;
+  }
+  .roadmapSection .roadmapImage {
+    max-width: 60%;
+    bottom: 0;
+    z-index: 100;
+  }
+  .pageFooter {
+    background-image: url(../img/footer-bg.png);
+  }
+}
+@media (max-width: 768px) {
+  .heroSection .redBgText.bgText {
+    margin-top: unset;
+  }
+  .heroSection .redBgText.bgText br {
+    display: block;
+  }
+  .heroSection {
+    padding-top: 5em;
+  }
+  .fishBtn {
+    width: 190px;
+  }
+  .heroSection .fishBtns {
+    display: block;
+    text-align: center;
+  }
+  .heroSection .fishBtn.leftBtn {
+    margin-left: unset;
+  }
+  .heroSection .heroBg {
+    height: 100%;
+  }
+  .heroSection .navbar-brand img {
+    height: 100px;
+    margin-bottom: unset;
+  }
+  .heroSection .navbar {
+    margin-bottom: 1em;
+    display: none;
+  }
+  .heroSection .navbar .navbar-nav {
+    margin-left: unset;
+  }
+  .heroSection .navbar .nav-link {
+    margin-right: unset;
+    font-size: 1em;
+  }
+  .aboutSection {
+    margin-top: unset;
+  }
+  .howSection .howImg {
+    height: 230px;
+  }
+  .detailsSection .detailsSteps {
+    background-image: unset !important;
+    padding: 1em;
+  }
+  .detailsSection .detailsSteps .stepNumber {
+    left: 0;
+    top: 0;
+  }
+  .detailsSection .detailsSteps.odd .stepNumber {
+    left: 0;
+  }
+  .tokenSection {
+    height: 1350px;
+  }
+  .tokenSection .tokenImg {
+    width: 100%;
+  }
+  .tokenSection .tokenCat {
+    width: 100%;
+  }
+  .roadmapSection .roadmapDetails {
+    background-image: unset;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #ff7800;
+    border-radius: 1em;
+  }
+  .roadmapSection .roadmapImage {
+    max-width: 100%;
+  }
+  .detailsSection .detailsLinks br {
+    display: block;
+  }
+  .pageFooter {
+    min-height: 66vh;
+  }
+}
+@media (max-width: 768px) {
+  .heroSection {
+    padding-top: 6em;
+  }
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 1);
+  outline: none !important;
+}
